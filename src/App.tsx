@@ -3,7 +3,7 @@ import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 
 import Page01Intro from "./pages/01-intro";
 import Page02Packets from "./pages/02-packets";
-import Page04Router from "./pages/04-router"
+import Page04Router from "./pages/04-router";
 import Page03Communication from "./pages/03-communication";
 import Page04Security from "./pages/03-security";
 
@@ -30,7 +30,7 @@ export default function App() {
 
 function Layout() {
   return (
-    <div className="outer columns">
+    <div className="app-outer columns">
       <div className="column is-2 is-hidden-mobile">
         <aside className="menu main">
           <div className="logo">
