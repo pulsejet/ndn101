@@ -1,0 +1,10 @@
+import { Name, Interest } from '@ndn/packet';
+
+# Create an NDN name from a URI string
+const name = new Name('/edu/ucla/cs/135/notes');
+
+# Create an Interest packet with this name
+const interest = new Interest(name);
+
+# Set the Interest packet's InterestLifetime to 4 seconds (default)
+interest.lifetime = 4000;

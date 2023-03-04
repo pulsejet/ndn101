@@ -1,6 +1,11 @@
 import * as React from "react";
 import PacketDemo from "./PacketDemo";
+import Code from "./Code";
 import "./02-packets.scss";
+
+import packetCxx from "../snippets/01-packet.sn.cpp";
+import packetPy from "../snippets/01-packet.sn.py";
+import packetTs from "../snippets/01-packet.sn.ts.txt";
 
 export default function Page() {
     return (
@@ -9,7 +14,7 @@ export default function Page() {
                 Packets in NDN
             </h1>
 
-            <p>
+            <div>
                 At a high level, NDN utilizes two distinct types of packets:
 
                 <ul>
@@ -48,9 +53,15 @@ export default function Page() {
                         <div className="signature">&lt;signature&gt;</div>
                     </div>
                 </div>
-            </p>
+            </div>
 
             <PacketDemo></PacketDemo>
+
+            <Code>
+                <code data-lib="ndn-cxx" data-lang="c++" data-snippet={packetCxx}></code>
+                <code data-lib="python-ndn" data-lang="python" data-snippet={packetPy}></code>
+                <code data-lib="NDNts" data-lang="typescript" data-snippet={packetTs}></code>
+            </Code>
         </div>
     );
 };

@@ -1,0 +1,13 @@
+.code-comp {
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px #eee;
+
+    .tabs, .tabs > ul {
+        margin: 0;
+    }
+
+    .code {
+        background-color: #fcfcfc;
+        padding: 10px;
+    }
+}
