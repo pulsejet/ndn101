@@ -2,7 +2,7 @@ import * as React from "react";
 
 export default function Page() {
     return (
-        <div>
+        <div className="content">
             <h1 className="title is-3">
                 Named Data Networking &#8211; An Introduction
             </h1>
