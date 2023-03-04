@@ -27,8 +27,30 @@ export default function Page() {
                         the Interest.
                     </li>
                 </ul>
+
+                <div className="packets-figure">
+                    <div className="packet interest">
+                        <div className="header">Interest</div>
+                        <div className="name">/edu/ucla/cs/135/notes</div>
+                        <div className="selectors">
+                            <div className="lifetime">Lifetime: 4000ms</div>
+                        </div>
+                    </div>
+
+                    <div className="arrow">
+                        &harr;
+                    </div>
+
+                    <div className="packet data">
+                        <div className="header">Data</div>
+                        <div className="name">/edu/ucla/cs/135/notes</div>
+                        <div className="ctn">&lt;content&gt;</div>
+                        <div className="signature">&lt;signature&gt;</div>
+                    </div>
+                </div>
             </p>
+
             <PacketDemo></PacketDemo>
         </div>
     );
-}
+};

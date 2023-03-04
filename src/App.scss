@@ -10,9 +10,16 @@ $outerPadding: 15px;
   border-bottom-left-radius: $borderRadius;
 
   .main.menu li > a {
-    padding: 0.85em;
+    padding: 0.8em 0.9em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
     font-size: 1.05em;
     border-radius: $borderRadius;
+
+    &.active {
+      background-color: hsl(348, 100%, 61%);
+      color: white;
+    }
   }
 
   .logo {

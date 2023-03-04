@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 
 import Page01Intro from "./pages/01-intro";
 import Page02Packets from "./pages/02-packets";
@@ -33,10 +33,10 @@ function Layout() {
 
           <ul className="menu-list">
             <li>
-              <Link to="/intro">Introduction</Link>
+              <NavLink to="/intro">Introduction</NavLink >
             </li>
             <li>
-              <Link to="/packets">Packets</Link>
+              <NavLink to="/packets">Packets</NavLink>
             </li>
           </ul>
         </aside>
@@ -53,9 +53,6 @@ function NoMatch() {
   return (
     <div>
       <h2>Nothing to see here!</h2>
-      <p>
-        <Link to="/">Go to the home page</Link>
-      </p>
     </div>
   );
 }

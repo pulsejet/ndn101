@@ -1,0 +1,28 @@
+.packets-figure {
+    font-family: monospace;
+
+    .header {
+        font-weight: bold;
+        font-size: 1.05em;
+        margin-bottom: 2px;
+    }
+
+    .arrow {
+        display: inline-block;
+        font-size: 1.5em;
+    }
+
+    .packet {
+        padding: 8px;
+        vertical-align: middle;
+        display: inline-block;
+        max-width: 250px;
+        border: 2px solid #000;
+        margin: 0 10px;
+        border-radius: 5px;
+
+        .name {
+            color: blue;
+        }
+    }
+}
