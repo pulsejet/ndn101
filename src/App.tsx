@@ -2,6 +2,7 @@ import * as React from "react";
 import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 
 import Page01Intro from "./pages/01-intro";
+import Page01GettingStarted from "./pages/01-getting-started";
 import Page02Packets from "./pages/02-packets";
 import Page03Communication from "./pages/03-communication";
 import Page04Multicast from "./pages/04-multicast";
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Page01Intro />} />
           <Route path="intro" element={<Page01Intro />} />
+          <Route path="getting-started" element={<Page01GettingStarted />} />
           <Route path="packets" element={<Page02Packets />} />
           <Route path="communication" element={<Page03Communication />} />
           <Route path="multicast" element={<Page04Multicast />} />
@@ -41,7 +43,10 @@ function Layout() {
 
           <ul className="menu-list">
             <li>
-              <NavLink to="/intro">Introduction</NavLink >
+              <NavLink to="/intro">Introduction</NavLink>
+            </li>
+            <li>
+              <NavLink to="/getting-started">Getting Started</NavLink>
             </li>
             <li>
               <NavLink to="/packets">Packet Types</NavLink>
