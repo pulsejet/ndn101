@@ -3,7 +3,7 @@ import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 
 import Page01Intro from "./pages/01-intro";
 import Page02Packets from "./pages/02-packets";
-import Page04Router from "./pages/04-router"
+import Page04Router from "./pages/04-forwarder"
 import Page03Communication from "./pages/03-communication";
 import Page04Security from "./pages/03-security";
 
