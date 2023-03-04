@@ -4,10 +4,11 @@ import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 import Page01Intro from "./pages/01-intro";
 import Page01GettingStarted from "./pages/01-getting-started";
 import Page02Packets from "./pages/02-packets";
+import Page04Forwarder from "./pages/04-forwarder"
 import Page03Communication from "./pages/03-communication";
 import Page04Multicast from "./pages/04-multicast";
 import Page04Security from "./pages/03-security";
-import Page04Router from "./pages/04-router";
+
 
 import "./App.scss";
 import logo from "./ndn-logo.svg";
@@ -24,7 +25,7 @@ export default function App() {
           <Route path="communication" element={<Page03Communication />} />
           <Route path="multicast" element={<Page04Multicast />} />
           <Route path="security" element={<Page04Security />} />
-          <Route path="router" element={<Page04Router />} />
+          <Route path="forwarder" element={<Page04Forwarder />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
@@ -61,7 +62,7 @@ function Layout() {
               <NavLink to="/security">Security</NavLink>
             </li>
             <li>
-              <NavLink to="/router">Router</NavLink>
+              <NavLink to="/forwarder">Forwarder</NavLink>
             </li>
           </ul>
         </aside>
