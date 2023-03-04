@@ -1,17 +1,17 @@
 import * as React from "react";
-import PacketDemo from "./PacketDemo";
-import Code from "./Code";
-import "./02-packets.scss";
+import Code from "../components/Code";
 
 import packetCxx from "../snippets/01-packet.sn.cpp";
 import packetPy from "../snippets/01-packet.sn.py";
 import packetTs from "../snippets/01-packet.sn.ts.txt";
 
+import "./02-packets.scss";
+
 export default function Page() {
     return (
         <div className="content">
             <h1 className="title is-3">
-                Packets in NDN
+                Packet Types
             </h1>
 
             <div>
@@ -55,7 +55,8 @@ export default function Page() {
                 </div>
             </div>
 
-            <PacketDemo></PacketDemo>
+            <hr />
+            The following snippet illustrates how to create Interest and Data packets in NDN.
 
             <Code>
                 <code data-lib="ndn-cxx" data-lang="c++" data-snippet={packetCxx}></code>
