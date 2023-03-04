@@ -3,9 +3,10 @@ import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 
 import Page01Intro from "./pages/01-intro";
 import Page02Packets from "./pages/02-packets";
-import Page04Router from "./pages/04-router";
 import Page03Communication from "./pages/03-communication";
+import Page04Multicast from "./pages/04-multicast";
 import Page04Security from "./pages/03-security";
+import Page04Router from "./pages/04-router";
 
 import "./App.scss";
 import logo from "./ndn-logo.svg";
@@ -18,9 +19,10 @@ export default function App() {
           <Route index element={<Page01Intro />} />
           <Route path="intro" element={<Page01Intro />} />
           <Route path="packets" element={<Page02Packets />} />
-          <Route path="router" element={<Page04Router />} />
           <Route path="communication" element={<Page03Communication />} />
+          <Route path="multicast" element={<Page04Multicast />} />
           <Route path="security" element={<Page04Security />} />
+          <Route path="router" element={<Page04Router />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
@@ -31,7 +33,7 @@ export default function App() {
 function Layout() {
   return (
     <div className="app-outer columns">
-      <div className="column is-2 is-hidden-mobile">
+      <div className="column is-2-desktop is-3 is-hidden-mobile">
         <aside className="menu main">
           <div className="logo">
             <img src={logo} alt="NDN Logo" />
@@ -46,6 +48,9 @@ function Layout() {
             </li>
             <li>
               <NavLink to="/communication">Communication</NavLink>
+            </li>
+            <li>
+              <NavLink to="/multicast">Data Multicast</NavLink>
             </li>
             <li>
               <NavLink to="/security">Security</NavLink>
