@@ -1,4 +1,5 @@
 import * as React from "react";
+import Why from "./01-intro/Why";
 
 export default function Page() {
     return (
@@ -6,6 +7,9 @@ export default function Page() {
             <h1 className="title is-3">
                 Named Data Networking &#8211; An Introduction
             </h1>
+            <h3>
+                What is NDN ?
+            </h3>
             <p>
             The Internet's architecture, with its simple and universal network layer (IP), 
             enabled its explosive growth, but its design choices are the root cause of today's Internet problems, 
@@ -20,6 +24,13 @@ export default function Page() {
             The NDN project's research challenge is to evolve it into an architectural framework capable of solving real problems,
              particularly in areas poorly served by today's Internet, through an experimental research effort that verifies and shapes the architectural direction.
             </p>
+            <h3>
+                Why NDN ?
+            </h3>
+            <Why/>
+            <h3>
+                How to NDN ?
+            </h3>
         </div>
     );
 }
