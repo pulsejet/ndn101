@@ -1,4 +1,5 @@
-import { Name, Interest } from '@ndn/packet';
+import { Name, Interest, Data } from '@ndn/packet';
+import { toUtf8 } from '@ndn/util';
 
 // Create an NDN name from a URI string
 const name = new Name('/edu/ucla/cs/135/notes');
@@ -8,3 +9,9 @@ const interest = new Interest(name);
 
 // Set the Interest packet's InterestLifetime to 4 seconds (default)
 interest.lifetime = 4000;
+
+// Create a Data packet with the same name
+const data = new Data(name);
+
+// Set the Data packet's content to "Hello, World!"
+data.content = toUtf8('Hello, World!');
