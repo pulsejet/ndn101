@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
-import "./layout.css"
+import "./layout.scss";
 
 export const Layouts = () => {
   return (
-    <div className="layouts">
+    <div className="ndn-router-info layouts">
       <div className="layout-1">
         <header>
           {"Content Store"}
