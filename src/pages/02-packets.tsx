@@ -53,6 +53,11 @@ export default function Page() {
                         <div className="signature">&lt;signature&gt;</div>
                     </div>
                 </div>
+
+                <blockquote>
+                    It is important to note that a Data packet is <b>required</b> to carry a
+                    signature to be considered valid.
+                </blockquote>
             </div>
 
             <hr />
