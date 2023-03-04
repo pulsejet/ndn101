@@ -15,4 +15,9 @@ body {
   padding: 15px;
   padding-right: 0;
   position: relative;
+  font-size: 1.1em;
+}
+
+.title {
+  margin: 1rem 0;
 }

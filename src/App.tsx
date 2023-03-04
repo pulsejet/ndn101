@@ -42,7 +42,7 @@ function Layout() {
         </aside>
       </div>
 
-      <div className="column">
+      <div className="column outlet">
         <Outlet />
       </div>
     </div>

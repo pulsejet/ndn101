@@ -10,13 +10,13 @@ $outerPadding: 15px;
   border-bottom-left-radius: $borderRadius;
 
   .main.menu li > a {
-    padding: 1em;
+    padding: 0.85em;
+    font-size: 1.05em;
     border-radius: $borderRadius;
   }
 
   .logo {
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
-
   }
 }
