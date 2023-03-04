@@ -3,6 +3,7 @@ import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 
 import Page01Intro from "./pages/01-intro";
 import Page02Packets from "./pages/02-packets";
+import Page04Router from "./pages/04-router"
 
 import "./App.scss";
 import logo from "./ndn-logo.svg";
@@ -15,6 +16,7 @@ export default function App() {
           <Route index element={<Page01Intro />} />
           <Route path="intro" element={<Page01Intro />} />
           <Route path="packets" element={<Page02Packets />} />
+          <Route path="router" element={<Page04Router />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
@@ -37,6 +39,9 @@ function Layout() {
             </li>
             <li>
               <NavLink to="/packets">Packets</NavLink>
+            </li>
+            <li>
+              <NavLink to="/router">Router</NavLink>
             </li>
           </ul>
         </aside>
