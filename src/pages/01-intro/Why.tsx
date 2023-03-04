@@ -3,13 +3,13 @@ import ExpandableBubble from './ExpandableBubble';
 
 export default function Why() {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <div className="bubbles-container">
       <ExpandableBubble
         label="Security"
         content="NDN uses names to identify data rather than a location, making it difficult for attackers to intercept data packets."
       />
       <ExpandableBubble
-        label="integrity and confidentiality"
+        label="Integrity"
         content="NDN uses cryptographic techniques to ensure data integrity and confidentiality, making it more secure than traditional IP networks."
       />
 
@@ -32,7 +32,7 @@ export default function Why() {
       />
 
       <ExpandableBubble
-        label="Content-centric"
+        label="Content Centric"
         content="NDN is designed to be content-centric rather than host-centric, which means that data can be accessed and shared independently of its location or origin."
       />
       <ExpandableBubble

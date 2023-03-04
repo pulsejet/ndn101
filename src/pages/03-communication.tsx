@@ -40,9 +40,9 @@ export default function Page() {
                 </ol>
 
                 <blockquote>
-                    Applications that send Interests to fetch data packets are called <b>"Consumers"</b>.
+                    Applications that send Interests to fetch data packets are called <b>"Consumers"</b>
                     <br />
-                    Likewise, applications that serve Data in response to Interests are called <b>"Producers"</b>.
+                    Likewise, applications that serve Data in response to Interests are called <b>"Producers"</b>
                 </blockquote>
             </div>
 
