@@ -1,4 +1,5 @@
 import * as React from "react";
+import PacketDemo from "./PacketDemo";
 import "./02-packets.scss";
 
 export default function Page() {
@@ -27,6 +28,7 @@ export default function Page() {
                     </li>
                 </ul>
             </p>
+            <PacketDemo></PacketDemo>
         </div>
     );
 }
