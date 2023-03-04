@@ -16,7 +16,7 @@ $outerPadding: 15px;
     border-radius: $borderRadius;
 
     &.active {
-      background-color: hsl(348, 100%, 61%);
+      background-color: var(--main-color);
       color: white;
     }
   }
