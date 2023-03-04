@@ -2,7 +2,7 @@ import * as React from "react";
 import "./Code.scss";
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { vs } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default function Code(props: any) {
     const [activeIdx, setIdxI] = React.useState(0);
@@ -37,7 +37,7 @@ export default function Code(props: any) {
             </div>
 
             <div className="code">
-                <SyntaxHighlighter language={props.children[activeIdx].props['data-lang']} style={docco}>
+                <SyntaxHighlighter language={props.children[activeIdx].props['data-lang']} style={vs}>
                     {snippet}
                 </SyntaxHighlighter>
             </div>
