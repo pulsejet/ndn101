@@ -30,7 +30,7 @@ export default function Code(props: any) {
                             className={idx === activeIdx ? 'is-active' : ''}
                             onClick={() => setIdx(idx)}>
 
-                            <a href='#'>{child.props['data-lib']}</a>
+                            <a>{child.props['data-lib']}</a>
                         </li>;
                     })}
                 </ul>

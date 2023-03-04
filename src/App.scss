@@ -16,7 +16,7 @@ $outerPadding: 15px;
     border-radius: $borderRadius;
 
     &.active {
-      background-color: hsl(348, 100%, 61%);
+      background-color: var(--main-color);
       color: white;
     }
   }
@@ -27,7 +27,18 @@ $outerPadding: 15px;
   }
 
   .outlet {
-    padding-right: 30px;
-    overflow: auto;
+    padding-left: 10px;
+    padding-right: 20px;
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    border-radius: 0;
+    height: 100vh;
+
+    .outlet {
+      padding-right: 5px;
+    }
   }
 }

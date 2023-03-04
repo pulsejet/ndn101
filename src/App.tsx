@@ -4,6 +4,8 @@ import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 import Page01Intro from "./pages/01-intro";
 import Page02Packets from "./pages/02-packets";
 import Page04Router from "./pages/04-router"
+import Page03Communication from "./pages/03-communication";
+import Page04Security from "./pages/03-security";
 
 import "./App.scss";
 import logo from "./ndn-logo.svg";
@@ -17,6 +19,8 @@ export default function App() {
           <Route path="intro" element={<Page01Intro />} />
           <Route path="packets" element={<Page02Packets />} />
           <Route path="router" element={<Page04Router />} />
+          <Route path="communication" element={<Page03Communication />} />
+          <Route path="security" element={<Page04Security />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
@@ -27,7 +31,7 @@ export default function App() {
 function Layout() {
   return (
     <div className="outer columns">
-      <div className="column is-one-quarter">
+      <div className="column is-2 is-hidden-mobile">
         <aside className="menu main">
           <div className="logo">
             <img src={logo} alt="NDN Logo" />
@@ -38,7 +42,13 @@ function Layout() {
               <NavLink to="/intro">Introduction</NavLink >
             </li>
             <li>
-              <NavLink to="/packets">Packets</NavLink>
+              <NavLink to="/packets">Packet Types</NavLink>
+            </li>
+            <li>
+              <NavLink to="/communication">Communication</NavLink>
+            </li>
+            <li>
+              <NavLink to="/security">Security</NavLink>
             </li>
             <li>
               <NavLink to="/router">Router</NavLink>

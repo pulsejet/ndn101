@@ -1,0 +1,46 @@
+html,
+body {
+  overflow: hidden !important;
+  margin: 0;
+  padding: 0;
+
+  --main-color: hsl(348, 100%, 61%);
+  background-color: var(--main-color);
+}
+
+#root {
+  height: 100vh;
+  display: block;
+  padding: 15px;
+  padding-right: 0;
+  position: relative;
+  font-size: 1.05em;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.title {
+  margin: 1rem 0;
+}
+
+/* Style scrollbars globally to be faint gray and rounded */
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f1f1f1;
+  border-radius: 20px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent #f1f1f1;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ExpandableBubble.css';
+import './ExpandableBubble.scss';
 
 interface ExpandableBubbleProps {
   label: string;

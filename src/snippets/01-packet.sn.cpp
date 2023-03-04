@@ -15,5 +15,5 @@ int main(int argc, char** argv)
     ndn::Data data(name);
 
     // Set the Data packet's content to "Hello, World!"
-    data.setContent(reinterpret_cast<const uint8_t*>("Hello, World!"), 13);
+    data.setContent(ndn::make_span(reinterpret_cast<const uint8_t*>("Hello, World!"), 13));
 }
