@@ -5,6 +5,7 @@ import Page01Intro from "./pages/01-intro";
 import Page02Packets from "./pages/02-packets";
 
 import "./App.scss";
+import logo from "./ndn-logo.svg";
 
 export default function App() {
   return (
@@ -26,6 +27,10 @@ function Layout() {
     <div className="outer columns">
       <div className="column is-one-quarter">
         <aside className="menu main">
+          <div className="logo">
+            <img src={logo} alt="NDN Logo" />
+          </div>
+
           <ul className="menu-list">
             <li>
               <Link to="/intro">Introduction</Link>

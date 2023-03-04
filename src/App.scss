@@ -1,8 +1,22 @@
+$borderRadius: 20px;
+$outerPadding: 15px;
+
 .outer {
-  padding: 10px;
-  overflow: hidden;
+  background-color: #fdfdfd;
+  height: calc(100vh - 2 * $outerPadding);
+  margin: 0;
+
+  border-top-left-radius: $borderRadius;
+  border-bottom-left-radius: $borderRadius;
 
   .main.menu li > a {
     padding: 1em;
+    border-radius: $borderRadius;
+  }
+
+  .logo {
+    width: 80%;
+    margin: 10px auto;
+
   }
 }
