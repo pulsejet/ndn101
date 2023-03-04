@@ -1,4 +1,4 @@
-$borderRadius: 20px;
+$borderRadius: 25px;
 $outerPadding: 15px;
 
 .outer {
@@ -18,5 +18,9 @@ $outerPadding: 15px;
   .logo {
     width: 90%;
     margin: 10px auto;
+  }
+
+  .outlet {
+    padding-right: 30px;
   }
 }
