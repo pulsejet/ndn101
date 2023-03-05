@@ -1,12 +1,6 @@
 import * as React from "react";
 import { Routes, Route, Outlet, NavLink } from "react-router-dom";
-
-import Page01Intro from "./pages/01-intro";
-import Page02GettingStarted from "./pages/02-getting-started";
-import Page03Packets from "./pages/03-packets";
-import Page04Communication from "./pages/04-communication";
-import Page05Multicast from "./pages/05-multicast";
-import Page06Security from "./pages/06-security";
+import routes from "./Routes";
 
 import logo from "./ndn-logo.svg";
 import "./App.scss";
@@ -15,14 +9,11 @@ export default function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Page01Intro />} />
-          <Route path="intro" element={<Page01Intro />} />
-          <Route path="getting-started" element={<Page02GettingStarted />} />
-          <Route path="packets" element={<Page03Packets />} />
-          <Route path="communication" element={<Page04Communication />} />
-          <Route path="multicast" element={<Page05Multicast />} />
-          <Route path="security" element={<Page06Security />} />
+         <Route path="/" element={<Layout />}>
+          <Route index element={routes[0].elem} />
+          {routes.map(({path, elem}) => (
+            <Route key={path} path={path} element={elem} />
+          ))}
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
@@ -40,24 +31,11 @@ function Layout() {
           </div>
 
           <ul className="menu-list">
-            <li>
-              <NavLink to="/intro">Introduction</NavLink>
-            </li>
-            <li>
-              <NavLink to="/getting-started">Getting Started</NavLink>
-            </li>
-            <li>
-              <NavLink to="/packets">Packet Types</NavLink>
-            </li>
-            <li>
-              <NavLink to="/communication">Communication</NavLink>
-            </li>
-            <li>
-              <NavLink to="/multicast">Data Multicast</NavLink>
-            </li>
-            <li>
-              <NavLink to="/security">Security</NavLink>
-            </li>
+            {routes.map(({path, label}) => (
+              <li key={path}>
+                <NavLink to={path}>{label}</NavLink>
+              </li>
+            ))}
           </ul>
         </aside>
       </div>
