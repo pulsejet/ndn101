@@ -17,18 +17,19 @@
     margin: min(10px, 1vw) min(10px, 1vw);
     text-align: center;
     z-index: 5;
-  }
 
-  .bubble:hover {
-    transform: scale(1.1);
-    background-color: var(--main-color);
-    color: white;
-  }
+    &:hover {
+      transform: scale(1.1);
+      background-color: var(--main-color);
+      color: white;
+      z-index: 10 !important;
+    }
 
-  .bubble.expanded {
-    transform: scale(1.6);
-    font-size: 0.625em;
-    z-index: 100;
+    &.expanded {
+      transform: scale(1.6);
+      font-size: 0.625em;
+      z-index: 8;
+    }
   }
 
   .bubble-label {
