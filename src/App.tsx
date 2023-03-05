@@ -2,16 +2,14 @@ import * as React from "react";
 import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 
 import Page01Intro from "./pages/01-intro";
-import Page01GettingStarted from "./pages/01-getting-started";
-import Page02Packets from "./pages/02-packets";
-import Page04Forwarder from "./pages/04-forwarder"
-import Page03Communication from "./pages/03-communication";
-import Page04Multicast from "./pages/04-multicast";
-import Page04Security from "./pages/03-security";
+import Page02GettingStarted from "./pages/02-getting-started";
+import Page03Packets from "./pages/03-packets";
+import Page04Communication from "./pages/04-communication";
+import Page05Multicast from "./pages/05-multicast";
+import Page06Security from "./pages/06-security";
 
-
-import "./App.scss";
 import logo from "./ndn-logo.svg";
+import "./App.scss";
 
 export default function App() {
   return (
@@ -20,12 +18,11 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Page01Intro />} />
           <Route path="intro" element={<Page01Intro />} />
-          <Route path="getting-started" element={<Page01GettingStarted />} />
-          <Route path="packets" element={<Page02Packets />} />
-          <Route path="communication" element={<Page03Communication />} />
-          <Route path="multicast" element={<Page04Multicast />} />
-          <Route path="security" element={<Page04Security />} />
-          <Route path="forwarder" element={<Page04Forwarder />} />
+          <Route path="getting-started" element={<Page02GettingStarted />} />
+          <Route path="packets" element={<Page03Packets />} />
+          <Route path="communication" element={<Page04Communication />} />
+          <Route path="multicast" element={<Page05Multicast />} />
+          <Route path="security" element={<Page06Security />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
@@ -60,9 +57,6 @@ function Layout() {
             </li>
             <li>
               <NavLink to="/security">Security</NavLink>
-            </li>
-            <li>
-              <NavLink to="/forwarder">Forwarder</NavLink>
             </li>
           </ul>
         </aside>

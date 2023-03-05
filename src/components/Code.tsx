@@ -21,7 +21,7 @@ export default function Code(props: any) {
     fetchSnippet();
 
     return (
-        <div className="code-comp">
+        <div className="component-code-container">
             <div className="tabs">
                 <ul>
                     {props.children.map((child: any, idx: number) => {

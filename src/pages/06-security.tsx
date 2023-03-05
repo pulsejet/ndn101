@@ -16,7 +16,7 @@ export default function Page() {
                 where key is also a data packet and retrievable by name.
             </p>
 
-            <div className="packets-figure">
+            <div className="page03-packets-figure">
                 <div className="packet interest">
                     <div className="header">Name</div>
                     <div className="header">Content</div>
@@ -36,7 +36,7 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="packets-figure">
+            <div className="page03-packets-figure">
                 <div className="packet interest">
                     <div className="name">/home/livingroom/feed/frontview/_frame=20</div>
                     <div className="header">Content</div>
@@ -56,7 +56,6 @@ export default function Page() {
                     <div className="header">Key-Locator</div>
                 </div>
 
-
                 <div className="arrow">
                     &harr;
                 </div>
@@ -64,7 +63,7 @@ export default function Page() {
                 <div className="valid">Valid</div>
             </div>
 
-            <div className="packets-figure">
+            <div className="page03-packets-figure">
                 <div className="packet interest">
                     <div className="name">/home/livingroom/feed/frontview/_frame=20</div>
                     <div className="header">Content</div>
@@ -76,16 +75,12 @@ export default function Page() {
                     &harr;
                 </div>
 
-
-
-
                 <div className="packet interest">
                     <div className="invalidname">/evilguy/KEY</div>
                     <div className="header">Content</div>
                     <div className="header">Signature</div>
                     <div className="header">Key-Locator</div>
                 </div>
-
 
                 <div className="arrow">
                     &harr;
@@ -107,11 +102,11 @@ export default function Page() {
                 </li>
             </ul>
 
-            <b>Trust Anchor:</b> All cryptographic verifications must terminate at a pre-established trust anchor. After a trust anchor is installed, 
+            <b>Trust Anchor:</b> All cryptographic verifications must terminate at a pre-established trust anchor. After a trust anchor is installed,
             an entity can verify other entities’ signatures by verifying their certificates along the certificate chain to the trust anchor.
 
             <br></br>
-            
+
             <h4 className="title is-4">
                 Name-based Access Control
             </h4>

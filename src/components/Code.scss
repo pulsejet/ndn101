@@ -1,14 +1,15 @@
-.code-comp {
-    border: 1px solid #eee;
-    box-shadow: 0 0 10px #eee;
-    margin: 1em 0;
+.component-code-container {
+  border: 1px solid #eee;
+  box-shadow: 0 0 10px #eee;
+  margin: 1em 0;
 
-    .tabs, .tabs > ul {
-        margin: 0;
-    }
+  .tabs,
+  .tabs > ul {
+    margin: 0;
+  }
 
-    .code {
-        background-color: #fcfcfc;
-        padding: 10px;
-    }
+  .code {
+    background-color: #fcfcfc;
+    padding: 10px;
+  }
 }

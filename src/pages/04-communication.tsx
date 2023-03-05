@@ -1,6 +1,5 @@
 import * as React from "react";
-import PacketDemo from "./PacketDemo";
-import PacketDemoAdvanced from "./PacketDemoAdvanced";
+import PacketDemo from "../components/PacketDemo";
 import Code from "../components/Code";
 
 import sendIntCxx from "../snippets/02-sendinterest.sn.cpp";

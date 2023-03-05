@@ -5,7 +5,7 @@ import packetCxx from "../snippets/01-packet.sn.cpp";
 import packetPy from "../snippets/01-packet.sn.py";
 import packetTs from "../snippets/01-packet.sn.ts.txt";
 
-import "./02-packets.scss";
+import "./03-packets.scss";
 
 export default function Page() {
     return (
@@ -33,7 +33,7 @@ export default function Page() {
                     </li>
                 </ul>
 
-                <div className="packets-figure">
+                <div className="page03-packets-figure">
                     <div className="packet interest">
                         <div className="header">Interest</div>
                         <div className="name">/edu/ucla/cs/135/notes</div>

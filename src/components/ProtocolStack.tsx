@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './hourglass.scss';
+import './ProtocolStack.scss';
 
 export default function App() {
   const [showPopup, setShowPopup] = useState(1);
