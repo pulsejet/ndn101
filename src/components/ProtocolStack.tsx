@@ -107,7 +107,7 @@ export default function App() {
       <div>
         {showFirstImage ? (
           <div className="image-container">
-            <img className="image" src="NDNhourglass.png" alt="First Image" />
+            <img className="image" src="NDNhourglass.png" alt="NDN stack" />
             {areas.map((area) => (
               <div
                 key={area.id}
@@ -136,7 +136,7 @@ export default function App() {
           </div>
         ) : (
           <div className="image-container">
-            <img className="image" src="IPhourglass.png" alt="Second Image" />
+            <img className="image" src="IPhourglass.png" alt="IP Stack" />
             {areas2.map((area) => (
               <div
                 key={area.id}
