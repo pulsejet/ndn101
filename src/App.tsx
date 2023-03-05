@@ -8,7 +8,7 @@ import Page04Forwarder from "./pages/04-forwarder"
 import Page03Communication from "./pages/03-communication";
 import Page04Multicast from "./pages/04-multicast";
 import Page04Security from "./pages/03-security";
-
+import ProtocolStack from "./pages/protocolstack"
 
 import "./App.scss";
 import logo from "./ndn-logo.svg";
@@ -26,6 +26,7 @@ export default function App() {
           <Route path="multicast" element={<Page04Multicast />} />
           <Route path="security" element={<Page04Security />} />
           <Route path="forwarder" element={<Page04Forwarder />} />
+          <Route path="protocol" element={<ProtocolStack />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
