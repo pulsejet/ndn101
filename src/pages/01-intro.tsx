@@ -1,5 +1,6 @@
 import * as React from "react";
 import Why from "./01-intro/Why";
+import ProtocolStack from "./protocolstack"
 
 export default function Page() {
     return (
@@ -13,10 +14,12 @@ export default function Page() {
                     The Internet's architecture, with its simple and universal network layer (IP),
                     enabled its explosive growth, but its design choices are the root cause of
                     today's Internet problems, especially when it comes to distribution networks.
+                    Named Data Networking (NDN) is a novel architecture that addresses these problems,
+                    taking the role of a new network layer (L3).
                 </p>
 
                 <p>
-                    Named Data Networking (NDN) retains the Internet's hourglass architecture
+                    NDN retains the Internet's hourglass architecture
                     but allows the creation of completely general distribution networks by removing
                     the restriction that packets can only name communication endpoints.
                     This enables NDN networks to solve not only communication problems but also digital distribution
@@ -29,14 +32,16 @@ export default function Page() {
             </div>
 
             <h2 className="title is-4">
-                Why bother with NDN?
+                How is NDN better?
             </h2>
 
             <Why />
 
             <h2 className="title is-4">
-                How to NDN ?
+                Protocol Stack
             </h2>
+
+            <ProtocolStack />
         </div>
     );
 }

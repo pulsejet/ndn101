@@ -55,9 +55,7 @@ export default function Page() {
             the corresponding Data.
 
             <br />
-            <span className="has-text-grey-light">
-                Note &ndash; for this example to work, you must first run the producer from the next part.
-            </span>
+            Note &ndash; for this example to work, you must first run the producer from the next part.
 
             <Code>
                 <code data-lib="ndn-cxx" data-lang="c++" data-snippet={sendIntCxx}></code>

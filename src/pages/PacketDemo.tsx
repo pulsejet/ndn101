@@ -25,7 +25,7 @@ const arrowMarker = {
 
 const MAX_STEP = 5
 export default function PacketDemo() {
-  
+
   const [step, setStep] = useState(0);
   var interestHidden = [false,false,false,true,true,true];
   var dataHidden = [true,true,true,false,false,false];
@@ -59,8 +59,8 @@ export default function PacketDemo() {
     setNodes(n)
     setEdges(e);
   }, [step]);
-  
-  
+
+
   var e = [
     { id: 'e1-2', source: '1', target: '2', markerEnd: arrowMarker, animated: true, style: {strokeWidth: 5}},
     { id: 'e2-3', source: '2', target: '3', markerEnd: arrowMarker, animated: false, style: {strokeWidth: 5}},
@@ -100,9 +100,9 @@ export default function PacketDemo() {
   // { id: 'data', hidden: dataHidden, sourcePosition: 'bottom', targetPosition: 'bottom', position: { x: 600, y: 20 }, data: { label: 'Data' }, draggable: false },);
   // setEdges({ id: 'e1-2', source: '1', target: '2', markerEnd: arrowMarker},
   // { id: 'e2-3', source: '2', target: '3', markerEnd: arrowMarker});
-  
 
-  
+
+
   const onConnect = useCallback((params: Edge | Connection) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
 
   return (

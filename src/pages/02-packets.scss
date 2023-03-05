@@ -1,51 +1,49 @@
 .packets-figure {
-    font-family: monospace;
-    margin: 20px 0;
+  font-family: monospace;
+  margin: 20px 0;
 
-    .header {
-        font-weight: bold;
-        font-size: 1.05em;
-        margin-bottom: 2px;
+  .header {
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-bottom: 2px;
+  }
+
+  .arrow {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+
+  .packet {
+    padding: 8px;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 500px;
+    border: 2px solid #000;
+    margin: 0 10px;
+    border-radius: 5px;
+
+    .name {
+      color: blue;
     }
 
-    .arrow {
-        display: inline-block;
-        font-size: 1.5em;
+    .validname {
+      color: green;
     }
 
-    .packet {
-        padding: 8px;
-        vertical-align: middle;
-        display: inline-block;
-        max-width: 500px;
-        border: 2px solid #000;
-        margin: 0 10px;
-        border-radius: 5px;
-
-        .name {
-            color: blue;
-        }
-
-        .validname {
-            color: green;
-        }
-
-        .invalidname {
-            color: red;
-        }
+    .invalidname {
+      color: red;
     }
+  }
 
-    .invalid {
-        display: inline-block;
-        padding: 8 px;
-        font-size: 2.5em;
-        color: red;
-    }
+  .invalid,
+  .valid {
+    display: inline-block;
+    margin: 8px;
+    font-size: 1.3em;
+    color: red;
+  }
 
-    .valid {
-        display: inline-block;
-        padding: 18 px;
-        font-size: 2.5em;
-        color: green;
-    }
+  .valid {
+    color: green;
+  }
 }
