@@ -47,7 +47,7 @@ export default function Page() {
 
             </p> 
 
-            <Layouts></Layouts>
+            {/* <Layouts></Layouts> */}
         </div>
     );
 };
