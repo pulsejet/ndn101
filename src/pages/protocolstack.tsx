@@ -168,7 +168,7 @@ export default function App() {
       </div>
 
       <div>
-        <button className="button is-danger" onClick={toggleImage}>{buttonLabel}</button>
+        <button className="btn button is-danger" onClick={toggleImage}>{buttonLabel}</button>
       </div>
 
 

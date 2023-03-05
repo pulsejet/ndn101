@@ -2,6 +2,7 @@
   .image-container {
     position: relative;
     display: inline-block;
+    margin-left: 250px;
   }
 
   .image {
@@ -29,5 +30,9 @@
     animation-name: pop-up;
     animation-duration: 0.3s;
     animation-timing-function: ease-out;
+  }
+
+  .btn {
+    margin-left: 250px;
   }
 }
