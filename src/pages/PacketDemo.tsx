@@ -24,7 +24,7 @@ const arrowMarker = {
 
 const MAX_STEP = 5
 export default function PacketDemo() {
-  
+
   const [step, setStep] = useState(0);
   var interestHidden = [false,false,false,true,true,true];
   var dataHidden = [true,true,true,false,false,false];
@@ -53,8 +53,8 @@ export default function PacketDemo() {
     setNodes(n)
     setEdges(e);
   }, [step]);
-  
-  
+
+
   var e = [
     { id: 'e1-2', source: '1', target: '2', markerEnd: arrowMarker, animated: true, style: {strokeWidth: 5}},
     { id: 'e2-3', source: '2', target: '3', markerEnd: arrowMarker, animated: false, style: {strokeWidth: 5}},
@@ -78,14 +78,14 @@ export default function PacketDemo() {
   // { id: 'data', hidden: dataHidden, sourcePosition: 'bottom', targetPosition: 'bottom', position: { x: 600, y: 20 }, data: { label: 'Data' }, draggable: false },);
   // setEdges({ id: 'e1-2', source: '1', target: '2', markerEnd: arrowMarker},
   // { id: 'e2-3', source: '2', target: '3', markerEnd: arrowMarker});
-  
 
-  
+
+
   const onConnect = useCallback((params: Edge | Connection) => setEdges((eds) => addEdge(params, eds)), [setEdges]);
 
   return (
     <div class="container">
-      <div class="packet-container" style={{height: 500}}>
+      <div class="packet-container" style={{height: '250px'}}>
       <button class="button" onClick={()=>setStep(step===0?step:step-1)}>Previous</button>
       <button class="button" onClick={()=>setStep(step < MAX_STEP?step+1 : step)}>Next</button>
       <progress class="progress is-primary" value={step} max="5">0%</progress>
@@ -93,6 +93,12 @@ export default function PacketDemo() {
         nodes={nodes}
         edges={edges}
         onConnect={onConnect}
+        zoomOnPinch={false}
+        zoomOnScroll={false}
+        zoomOnDoubleClick={false}
+        snapToGrid={true}
+        panOnDrag={false}
+        panOnScroll={false}
       >
         <Background />
       </ReactFlow>
