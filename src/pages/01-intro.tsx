@@ -1,5 +1,6 @@
 import * as React from "react";
 import Why from "./01-intro/Why";
+import ProtocolStack from "./protocolstack"
 
 export default function Page() {
     return (
@@ -35,6 +36,12 @@ export default function Page() {
             </h2>
 
             <Why />
+
+            <h2 className="title is-4">
+                Protocol Stack
+            </h2>
+
+            <ProtocolStack />
         </div>
     );
 }
