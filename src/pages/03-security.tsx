@@ -17,9 +17,6 @@ export default function Page() {
             </p>
 
             <br></br>  
-            <br></br>  
-
-
             <div className="packets-figure">
                     <div className="packet interest">
                         <div className="header">Name</div>
@@ -40,7 +37,7 @@ export default function Page() {
                     </div>
                 </div>
                  <br></br>   
-                 <br></br> 
+
                 <p><b>Not Just Signature, but Whose Key Signed it?</b></p>
 
 
@@ -72,7 +69,6 @@ export default function Page() {
                     <div className="valid">Valid</div>
                 </div>
 
-                <br></br>
                 <br></br>
 
                 <div className="packets-figure">
@@ -112,9 +108,25 @@ export default function Page() {
                 </div>
 
                 
+            <br></br>
+            A <b>Trust schema</b> defines the rule that which key is supposed to sign which data packet.
+            There are several design and implementations of Trust Schema, the most popular of which are:
+
+            <ul>
+                <li>
+                    <a href="https://docs.named-data.net/ndn-cxx/current/tutorials/security-validator-config.html">Schema Validator</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/pollere/DCT">Versec</a>
+                </li>
+            </ul>
 
 
-
+            <h4 className="title is-3">
+                Name-based Access Control
+            </h4>
+        
         </div>
     );
 }
