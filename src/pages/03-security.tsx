@@ -4,112 +4,97 @@ export default function Page() {
     return (
         <div className="content">
             <h1 className="title is-3">
-                Security of Named Data Networking
+                Security
             </h1>
 
-            <h4 className="title is-3">
+            <h4 className="title is-4">
                 Data Authentication
             </h4>
             <p>
-                In NDN, Name and content are bound together with a crypto signature.
-                Data packet includes a name of the public key to verify the signature;
+                In NDN, Name and content are bound together with a cryptographic signature.
+                Data packets include a name of the public key to verify the signature;
                 where key is also a data packet and retrievable by name.
             </p>
 
-            <br></br>  
             <div className="packets-figure">
-                    <div className="packet interest">
-                        <div className="header">Name</div>
-                        <div className="header">Content</div>
-                        <div className="header">Signature</div>
-                        <div className="header">Key-Locator</div>
-                    </div>
-
-                    <div className="arrow">
-                        &harr;
-                    </div>
-
-                    <div className="packet interest">
-                        <div className="header">Name</div>
-                        <div className="header">Content</div>
-                        <div className="header">Signature</div>
-                        <div className="header">Key-Locator</div>
-                    </div>
-                </div>
-                 <br></br>   
-
-                <p><b>Not Just Signature, but Whose Key Signed it?</b></p>
-
-
-                <div className="packets-figure">
-                    <div className="packet interest">
-                        <div className="name">/home/livingroom/feed/frontview/_frame=20</div>
-                        <div className="header">Content</div>
-                        <div className="header">Signature</div>
-                        <div className="header">Key-Locator</div>
-                    </div>
-
-                    <div className="arrow">
-                        &harr;
-                    </div>
-
-
-                    <div className="packet interest">
-                        <div className="validname">/home/camera/key</div>
-                        <div className="header">Content</div>
-                        <div className="header">Signature</div>
-                        <div className="header">Key-Locator</div>
-                    </div>
-
-
-                    <div className="arrow">
-                        &harr;
-                    </div>
-
-                    <div className="valid">Valid</div>
+                <div className="packet interest">
+                    <div className="header">Name</div>
+                    <div className="header">Content</div>
+                    <div className="header">Signature</div>
+                    <div className="header">Key-Locator</div>
                 </div>
 
-                <br></br>
-
-                <div className="packets-figure">
-                    <div className="packet interest">
-                        <div className="name">/home/livingroom/feed/frontview/_frame=20</div>
-                        <div className="header">Content</div>
-                        <div className="header">Signature</div>
-                        <div className="header">Key-Locator</div>
-                    </div>
-
-                    <div className="arrow">
-                        &harr;
-                    </div>
-
-                   
-
-
-                    <div className="packet interest">
-                        <div className="invalidname">/evilguy/KEY</div>
-                        <div className="header">Content</div>
-                        <div className="header">Signature</div>
-                        <div className="header">Key-Locator</div>
-                    </div>
-
-
-                    <div className="arrow">
-                        &harr;
-                    </div>
-
-                    <div className="invalid">Invalid</div>
-
-
-
-                    
-
-                    
+                <div className="arrow">
+                    &harr;
                 </div>
 
-                
-            <br></br>
-            A <b>Trust schema</b> defines the rule that which key is supposed to sign which data packet.
+                <div className="packet interest">
+                    <div className="header">Name</div>
+                    <div className="header">Content</div>
+                    <div className="header">Signature</div>
+                    <div className="header">Key-Locator</div>
+                </div>
+            </div>
+
+            <div className="packets-figure">
+                <div className="packet interest">
+                    <div className="name">/home/livingroom/feed/frontview/_frame=20</div>
+                    <div className="header">Content</div>
+                    <div className="header">Signature</div>
+                    <div className="header">Key-Locator</div>
+                </div>
+
+                <div className="arrow">
+                    &harr;
+                </div>
+
+
+                <div className="packet interest">
+                    <div className="validname">/home/camera/key</div>
+                    <div className="header">Content</div>
+                    <div className="header">Signature</div>
+                    <div className="header">Key-Locator</div>
+                </div>
+
+
+                <div className="arrow">
+                    &harr;
+                </div>
+
+                <div className="valid">Valid</div>
+            </div>
+
+            <div className="packets-figure">
+                <div className="packet interest">
+                    <div className="name">/home/livingroom/feed/frontview/_frame=20</div>
+                    <div className="header">Content</div>
+                    <div className="header">Signature</div>
+                    <div className="header">Key-Locator</div>
+                </div>
+
+                <div className="arrow">
+                    &harr;
+                </div>
+
+
+
+
+                <div className="packet interest">
+                    <div className="invalidname">/evilguy/KEY</div>
+                    <div className="header">Content</div>
+                    <div className="header">Signature</div>
+                    <div className="header">Key-Locator</div>
+                </div>
+
+
+                <div className="arrow">
+                    &harr;
+                </div>
+
+                <div className="invalid">Invalid</div>
+            </div>
+
+            A <b>Trust Schema</b> defines the rule that which key is supposed to sign which data packet.
             There are several design and implementations of Trust Schema, the most popular of which are:
 
             <ul>
@@ -123,10 +108,10 @@ export default function Page() {
             </ul>
 
 
-            <h4 className="title is-3">
+            <h4 className="title is-4">
                 Name-based Access Control
             </h4>
-        
+
         </div>
     );
 }
