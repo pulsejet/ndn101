@@ -94,7 +94,7 @@ export default function Page() {
                 <div className="invalid">Invalid</div>
             </div>
 
-            A <b>Trust Schema</b> defines the rule that which key is supposed to sign which data packet.
+            <b>Trust Schema</b>: A trust schema defines the rule that which key is supposed to sign which data packet.
             There are several design and implementations of Trust Schema, the most popular of which are:
 
             <ul>
@@ -107,7 +107,11 @@ export default function Page() {
                 </li>
             </ul>
 
+            <b>Trust Anchor:</b> All cryptographic verifications must terminate at a pre-established trust anchor. After a trust anchor is installed, 
+            an entity can verify other entities’ signatures by verifying their certificates along the certificate chain to the trust anchor.
 
+            <br></br>
+            
             <h4 className="title is-4">
                 Name-based Access Control
             </h4>
