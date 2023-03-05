@@ -86,9 +86,9 @@ export default function App() {
     {
       id: 5,
       left: 0,
-      top: 60,
+      top: 75,
       width: 100,
-      height: 25,
+      height: 30,
       text: 'Cables, Radio',
     },
   ];
